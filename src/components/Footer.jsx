@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer className="w-full flex flex-col sm:flex-row justify-between items-center mt-8 py-4 border-t bg-gray-800 text-white px-4">
       
-      <p>CopyWright &copy; : 2025 Aman Qureshi</p>
+      <p>Copyright &copy; : 2025 Aman Qureshi</p>
       
       <div className="flex mt-4 sm:mt-0">
         
