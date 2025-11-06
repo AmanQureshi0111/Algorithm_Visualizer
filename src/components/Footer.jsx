@@ -1,5 +1,5 @@
 function Footer() {
-  const currentYear = new Date().getFullYear();
+  // const currentYear = new Date().getFullYear();
   
   return (
     <footer className="w-full flex flex-col sm:flex-row justify-between items-center mt-8 py-4 border-t bg-gray-800 text-white px-4">

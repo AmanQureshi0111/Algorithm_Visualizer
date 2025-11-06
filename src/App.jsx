@@ -1,10 +1,9 @@
 import { useEffect } from "react";
 import { useState } from "react";
 
-import {bubbleSort} from "./algorithms";
-import {BubbleSort,Footer} from "./components";
+import {bubbleSort,insertionSort,mergeSort,quickSort,selectionSort} from "./algorithms";
+import {BubbleSort,MergeSort , SelectionSort , QuickSort  , InsertionSort ,Footer} from "./components";
 
-// , MergeSort , SelectionSort , QuickSort  , InsertionSort , Footer} 
 function App() {
 
   const [array,setArray] = useState([]);
@@ -40,21 +39,21 @@ function App() {
         await bubbleSort(array , setArray , speed);
         break;
       
-      // case "mergeSort":
-      //   await mergeSort(array , setArray , speed);
-      //   break;
+      case "mergeSort":
+        await mergeSort(array , setArray , speed);
+        break;
       
-      // case "insertionSort":
-      //   await insertionSort(array , setArray , speed);
-      //   break;
+      case "insertionSort":
+        await insertionSort(array , setArray , speed);
+        break;
       
-      // case "quickSort":
-      //   await quickSort(array , setArray , speed);
-      //   break;
+      case "quickSort":
+        await quickSort(array , setArray , speed);
+        break;
       
-      // case "selectionSort":
-      //   await selectionSort(array , setArray , speed);
-      //   break;
+      case "selectionSort":
+        await selectionSort(array , setArray , speed);
+        break;
 
       default:
         break;
@@ -91,13 +90,13 @@ function App() {
 
             <option value="bubbleSort">Bubble Sort</option>
 
-            {/* <option value="mergeSort">Merge Sort</option>
+            <option value="mergeSort">Merge Sort</option>
             
             <option value="insertionSort">Insertion Sort</option>
             
             <option value="quickSort">Quick Sort</option>
 
-            <option value="selectionSort">Selection Sort</option> */}
+            <option value="selectionSort">Selection Sort</option>
 
           </select>
 
@@ -179,10 +178,10 @@ function App() {
         )}
 
         {algortihm == "bubbleSort" && <BubbleSort />}
-        {/* {algortihm == "mergeSort" && <MergeSort />}
+        {algortihm == "mergeSort" && <MergeSort />}
         {algortihm == "insertionSort" && <InsertionSort />}
         {algortihm == "quickSort" && <QuickSort />}
-        {algortihm == "selectionSort" && <SelectionSort />} */}
+        {algortihm == "selectionSort" && <SelectionSort />}
 
       </div>
       <Footer/>
