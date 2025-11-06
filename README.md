@@ -1,2 +1,2 @@
 # Algorithm Visualizer 
-# <a href="https://algorithmcodeflowvisualizer.netlify.app/"> Live Demo </a>
+# <a href="https://algorithmvisualizer2025.netlify.app/"> Live Demo </a>
